@@ -76,11 +76,8 @@ As an exception, withdrawals by borrowers are temporarily suspended if the total
 
 This depends on your personal preferences, primarily your risk tolerance and how actively you want to manage your position(s). To help with the decision, you'll find preset options on the user interface that can serve as a guide.
 
-:::tip
-We may display BOLD instead of USND in several graphics which are borrowed from Liquity.
-:::
+<img width="302" height="110" alt="Loan" src="https://github.com/user-attachments/assets/4af58e68-e991-4178-8b81-5e9712397029" />
 
-![](https://docs.liquity.org/~gitbook/image?url=https%3A%2F%2F2342324437-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FE2A1Xrcj7XasxOiotWky%252Fuploads%252FKYV7j08QhkPfeWdSZCE5%252Fltv_preset.png%3Falt%3Dmedia%26token%3D98dda88c-18ee-4993-9993-ece6d9242a86&width=768&dpr=4&quality=100&sign=6093ec1&sv=2)
 Please note that these examples are for illustration purposes only and do not represent definitive risk or safety thresholds. It's essential to determine your own risk tolerance and comfort level as a user.
 
 If your LTV becomes too high, your position will be liquidated.
@@ -103,7 +100,7 @@ A special case is when a Redistribution is necessary, then:
 * For ETH, the loss amounts to 10% of the debt (at most). That corresponds to a max. loss of 9.09% expressed in terms of collateral.
 * For rETH/wstETH the loss is 20% of the debt, corresponding to a max. loss of 16.67% expressed in terms of collateral.
 
-![](https://docs.liquity.org/~gitbook/image?url=https%3A%2F%2F2342324437-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FE2A1Xrcj7XasxOiotWky%252Fuploads%252FhaTvXYC1FTrAwmfXQZ14%252Fliqtable.png%3Falt%3Dmedia%26token%3Da2ab7753-5fd6-4741-8c43-871fc704aa1a&width=768&dpr=4&quality=100&sign=fba442d0&sv=2)
+<img width="440" height="209" alt="Chart" src="https://github.com/user-attachments/assets/4a46b158-c13c-47b5-8e8e-bf4fc3128ab5" />
 
 ### How am I compensated for liquidating a Trove? 
 
@@ -157,7 +154,7 @@ Since redemptions are performed in ascending order of interest rate (for the res
 
 You can see the distribution of other users' rates in a histogram and position yourself accordingly.
 
-![](https://docs.liquity.org/~gitbook/image?url=https%3A%2F%2F2342324437-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FE2A1Xrcj7XasxOiotWky%252Fuploads%252FHkqGvdaJxndhC8uhzLw0%252Frerwere.png%3Falt%3Dmedia%26token%3D796599d0-6785-4cd2-ad6a-bad02d062f45&width=768&dpr=4&quality=100&sign=c26f7d49&sv=2)
+<img width="288" height="130" alt="Rate" src="https://github.com/user-attachments/assets/2dd663be-fae8-4290-9d60-0d5f7f71089a" />
 
 Redemptions usually occur when USND is trading below $1 minus the current redemption fee. Keeping an eye on the past [redemption activity](https://dune.com/liquity/liquity-v2#redemptions) can help you assess the overall redemption risk, serving as an additional data point for your rate selection.
 
