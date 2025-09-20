@@ -32,7 +32,8 @@ Nerite uses Liquity V2's market-driven monetary policy through user-set interest
 When USND trades above $1, borrowers tend to reduce their rates due to lower redemption risk, making borrowing more and holding USND less attractive. This helps correct the price downwards.
 
 In contrast, when USND trades below $1, arbitrageurs will initiate redemptions to restore the peg. Borrowers' exposure to redemption risk prompts them to increase interest rates, boosting demand for USND (and Earn deposits) and pushing its price upward.
-![](https://docs.liquity.org/~gitbook/image?url=https%3A%2F%2F2342324437-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FE2A1Xrcj7XasxOiotWky%252Fuploads%252FOPagS0zx2PSCiAFmH8Uq%252Flight%2520-%2520BOLD%2520peg%2520mechanism.png%3Falt%3Dmedia%26token%3Dfcc3163a-a96d-4085-a1ea-d5c4606ab3b7&width=768&dpr=4&quality=100&sign=37ed4c8c&sv=2)
+<img width="563" height="327" alt="USND Price Chart" src="https://github.com/user-attachments/assets/b78b6905-618a-4a79-aad6-92a8ae12f017" />
+
 
 ### How can I earn yield with Nerite?
 
