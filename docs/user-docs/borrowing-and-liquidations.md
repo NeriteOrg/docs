@@ -111,17 +111,17 @@ The liquidation of Troves is connected with certain gas costs which the initiato
 
 `0.0375 WETH + min(0.5% trove_collateral, 2_units_of_LST_or_WETH)`
 
-The `0.0375 WETH` is funded by a [refundable gas deposit](borrowing-and-liquidations.md#what-is-the-refundable-gas-deposit) while the variable `0.5%` part comes from the liquidated collateral, slightly reducing the liquidation gain for Stability Providers.
+The `0.001 WETH` is funded by a [refundable gas deposit](borrowing-and-liquidations.md#what-is-the-refundable-gas-deposit) while the variable `0.5%` part comes from the liquidated collateral, slightly reducing the liquidation gain for Stability Providers.
 
 ### What is the max Loan-To-Value (LTV)?
 
 That depends on the collateral type you will use.&#x20;
 
-ETH will have a LTV of 90.91% while wstETH and rETH will have it at 83.33%.
+ETH, wstETH, and rETH have a LTV of 90.91% while other assets have other LTVs. Check out the full [Collateral Parameters](https://docs.nerite.org/docs/technical-documentation/collaterals) chart for all details on current settings.
 
 ### What is the refundable gas deposit?
 
-To open a new Trove, the protocol requires a liquidation reserve of 0.0375 ETH regardless of the chosen collateral, which is set aside to cover the gas costs of a potential liquidation. The deposit is returned when the Trove is closed by the user (including upon redemptions).
+To open a new Trove, the protocol requires a liquidation reserve of 0.001 ETH regardless of the chosen collateral, which is set aside to cover the gas costs of a potential liquidation. The deposit is returned when the Trove is closed by the user (including upon redemptions). The deposit goes to liquidation bots if a trove is liquidated.
 
 ### How much will I pay for my loan?
 
@@ -230,4 +230,4 @@ The liquidator can freely choose between two fallback liquidation modes for the 
 2. Redistribution: the liquidator triggers a redistribution, through which the Trove's entire debt and collateral is redistributed to all fellow borrowers of the respective collateral market, in proportion to their own collateral amounts. Thus, the respective borrowers will receive a share of the liquidated collateral and see their debts increase proportionally.
 
 ### Shutdown Borrow Markets
-The system may shut down borrow markets whose total collateralization ratio (TCR) falls below 110% (for ETH) or 120% (for wstETH and rETH). The shutdown is performed by incentivizing redemptions against the respective collateral (see [this](https://liquity.gitbook.io/v2-whitepaper/liquity-v2-whitepaper/functionality-and-use-cases#c9aukpugrj32) for more details)
+The system may shut down borrow markets whose total collateralization ratio (TCR) falls below 110% (for ETH) or other amounts for other collaterals based on risk parameters. The shutdown is performed by incentivizing redemptions against the respective collateral (see [this](https://liquity.gitbook.io/v2-whitepaper/liquity-v2-whitepaper/functionality-and-use-cases#c9aukpugrj32) for more details)
