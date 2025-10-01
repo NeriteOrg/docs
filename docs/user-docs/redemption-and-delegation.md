@@ -13,7 +13,7 @@ A redemption is essentially swapping USND for ETH/LST at face value, as if 1 USN
 
 The redeemer sends USND to the protocol and in return  gets a mix of WETH, wstETH and rETH (minus the redemption fee). The redeemed amount is split among the different collateral assets based on their current Stability Pool backing (see [link](#how-is-the-collateral-split-determined) for more info).
 
-![](https://docs.liquity.org/~gitbook/image?url=https%3A%2F%2F2342324437-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FE2A1Xrcj7XasxOiotWky%252Fuploads%252F0XdFvKy05sdM3JClXcI5%252Flight%2520-%2520BOLD%2520individual%2520redemption.png%3Falt%3Dmedia%26token%3D3037c032-5464-4614-b206-d9d5157c0228&width=768&dpr=4&quality=100&sign=abb38c31&sv=2)
+<img width="910" height="229" alt="Redeption" src="https://github.com/user-attachments/assets/c0548fbc-e4af-4713-a5d6-1b9ac1e828b9" />
 
 Redemptions start from the borrower paying the least interest.
 
@@ -49,7 +49,6 @@ You can see your collateral and debt reduced equally (in USD terms) and the rede
 Partially affected Troves whose debt stays above the minimum debt threshold of 500 USND continue to work as before, while Troves whose debt is reduced to a lesser amount (or 0) switch to a dormant operating mode (see below for [more](#what-happens-when-redemptions-cause-a-debt-of-a-trove-to-fall-below-the-minimum-amount) info).
 
 ### How do redemptions work using three collateral assets?
-![](https://docs.liquity.org/~gitbook/image?url=https%3A%2F%2F2342324437-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FE2A1Xrcj7XasxOiotWky%252Fuploads%252FJtx0jgGBkGisNExyXZ5a%252Fredemption%2520split%25202.png%3Falt%3Dmedia%26token%3D79f895c0-290c-41e9-9aeb-b3fa5a3709f5&width=768&dpr=4&quality=100&sign=17e818d8&sv=2)
 
 In contrast to LUSD, USND is backed by a multitude of collaterals. Instead of letting the redeemer freely choose the collateral to redeem, Liquity V2 and Nerite optimize the process for economic safety. Redemptions are thus serviced through a collateral mix in a way that enhances the overall backing of USND.
 
@@ -57,7 +56,8 @@ The process starts with the Troves paying the lowest interest rates in each coll
 
 In this example, the rETH market shows a full redemption of the first Trove and a partial redemption of the second. The wstETH and ETH markets have one partial and two full redemptions, respectively
 
-![](https://docs.liquity.org/~gitbook/image?url=https%3A%2F%2F2342324437-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FE2A1Xrcj7XasxOiotWky%252Fuploads%252FJtx0jgGBkGisNExyXZ5a%252Fredemption%2520split%25202.png%3Falt%3Dmedia%26token%3D79f895c0-290c-41e9-9aeb-b3fa5a3709f5&width=768&dpr=4&quality=100&sign=17e818d8&sv=2)
+<img width="1277" height="718" alt="Redeemer 1" src="https://github.com/user-attachments/assets/925f3ab0-ecd9-48d7-8263-cb5dd4bf2f7a" />
+
 
 ### How is the collateral split determined?
 
@@ -67,9 +67,7 @@ To mitigate this risk, the system redeems proportionally to the "outside debt" o
 
 Here is an example: given outside debt amounts of 100 USND, 50 USND and 100 USND respectively, a redemption will result in a 40% (WETH), 20% (wstETH) and 40% (rETH) split.
 
-
-
-![](https://docs.liquity.org/~gitbook/image?url=https%3A%2F%2F2342324437-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FE2A1Xrcj7XasxOiotWky%252Fuploads%252FjSQv4scadWPAaEtb0whz%252Fredeem2.png%3Falt%3Dmedia%26token%3D6b7dc320-1b97-4cd7-9ad1-1afbbb7c70fe&width=768&dpr=4&quality=100&sign=eeabe72d&sv=2)
+<img width="1537" height="880" alt="Redeemer 2" src="https://github.com/user-attachments/assets/71008643-ae18-47cb-97bf-613293fe9e05" />
 
 ### Is there a redemption fee?
 
@@ -89,13 +87,14 @@ The risk of redemption depends on two factors: the interest rate you set and the
 
 **The interest rate** you set determines how much USND must be redeemed before it's your turn.  The higher your rate, the more USND is redeemable before you, and vice versa.
 
-You can see this on any frontned, in the example below the number is 41M.
+You can see this on any frontned, in the example below the number is 352k
 
-![](https://docs.liquity.org/~gitbook/image?url=https%3A%2F%2F2342324437-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FE2A1Xrcj7XasxOiotWky%252Fuploads%252FHkqGvdaJxndhC8uhzLw0%252Frerwere.png%3Falt%3Dmedia%26token%3D796599d0-6785-4cd2-ad6a-bad02d062f45&width=768&dpr=4&quality=100&sign=c26f7d49&sv=2)
+<img width="288" height="130" alt="Rate" src="https://github.com/user-attachments/assets/76db77d7-38c2-493f-94e8-83ec8ccf1629" />
 
-This means that 41M USND must be removed from the system before it would reach you. However, this number is relative, and you also need to consider recent redemption activity. While past events don't guarantee future outcomes, they can serve as a useful guide.
 
-For example, if only 200K USND were redeemed in the last week, you're comparatively safer than if 15M were redeemed. 
+This means that 352k USND must be removed from the system before it would reach you. However, this number is relative, and you also need to consider recent redemption activity. While past events don't guarantee future outcomes, they can serve as a useful guide.
+
+For example, if only 100K USND were redeemed in the last week, you're comparatively safer than if 1M were redeemed. 
 
 **The price of USND** is the second crucial factor. When it trades above $1, redemptions become unprofitable and should cease. If demand for USND is strong, it could maintain a price above $1 for an extended period.
 
