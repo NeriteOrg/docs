@@ -39,6 +39,12 @@ Nerite is governance-minimized. NERI holders do **NOT** have the power to:
 
 The protocol's smart contracts are immutable. Governance exists only where it is strictly necessary.
 
+## NERI Liquidity
+
+The primary NERI liquidity pool is on Balancer v3 (Arbitrum):
+
+**[NERI Pool on Balancer](https://balancer.fi/pools/arbitrum/v3/0x483bc7fe92fc392305dd97d4d3363e0e0a7f144d)**
+
 ## NERI Staking
 Coming Soon.
 
