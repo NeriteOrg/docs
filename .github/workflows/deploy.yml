@@ -1,6 +1,9 @@
 name: Deploy
 
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
     inputs:
       environment:
@@ -36,4 +39,4 @@ jobs:
       - name: Build and Deploy
         run: |
           npx yarn build
-          GIT_USER=cupOJoseph npx yarn deploy 
+          GIT_USER=cupOJoseph npx yarn deploy
