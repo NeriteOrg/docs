@@ -46,7 +46,11 @@ To understand Nerite it's helpful to understand [Liquity](https://www.liquity.or
 |||\
 
 ## Does Nerite have governance?
-Nerite is subject to minimal governance which is solely tasked with distributing Protocol Liquidity Incentives (PIL), directing 25% of the protocol's revenue to external initiatives, delegating ARB, and updating collateral debt limits. Governance can never change the fee split, update protocol parameters, mint new stablecoins, or anything else.
+Nerite is governance-minimized. The NERI token governs the flow of 25% of all fees from the protocol. NERI holders are members of the **Go Slow Foundation DAO LLC**, a legally recognized entity in the Marshall Islands.
+
+Unlike most DeFi protocols, Nerite has **no separate DAO, foundation, operational company, or labs entity**. There is no Nerite Foundation, no Nerite Labs, no opco extracting value. It's just NERI — the token itself is the entire governance and value-flow structure.
+
+NERI governance is solely tasked with directing 25% of the protocol's revenue, distributing Protocol Liquidity Incentives (PIL), delegating ARB, and updating collateral debt limits. Governance can never change the fee split, update protocol parameters, mint new stablecoins, or anything else.
 
 
 ## Other Helpful Resources:
