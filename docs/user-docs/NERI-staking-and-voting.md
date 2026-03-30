@@ -12,7 +12,9 @@ Guide to staking NERI tokens and participating in governance.
 
 ## What is NERI?
 
-NERI is the native governance token of the Nerite protocol. NERI holders are members of the **Go Slow Foundation DAO LLC**, a legally recognized entity incorporated in the Marshall Islands. This means NERI holders have real, legally recognized governance rights — not just onchain signaling.
+NERI is the native governance token of the Nerite protocol. It was created using [Aragon](https://aragon.org/), the same governance framework behind protocols like Curve and Lido. NERI holders are members of the **Go Slow Foundation DAO LLC**, a legally recognized entity incorporated in the Marshall Islands. This means NERI holders have real, legally recognized governance rights — not just onchain signaling.
+
+NERI can be delegated, and control over the delegation of ARB tokens deposited in Nerite is left to NERI holders.
 
 ### No Separate Entities
 
@@ -44,6 +46,12 @@ The protocol's smart contracts are immutable. Governance exists only where it is
 The primary NERI liquidity pool is on Balancer v3 (Arbitrum):
 
 **[NERI Pool on Balancer](https://balancer.fi/pools/arbitrum/v3/0x483bc7fe92fc392305dd97d4d3363e0e0a7f144d)**
+
+## NERI Voting
+
+Governance proposals and voting take place on Aragon:
+
+**[NERI DAO on Aragon](https://app.aragon.org/dao/arbitrum-mainnet/0x108f48E558078C8eF2eb428E0774d7eCd01F6B1d/proposals?proposals=0x135E64d9816e5E2e237CFDcc02b1361B70EaD6Fa-tokenvoting)**
 
 ## NERI Staking
 Coming Soon.
