@@ -16,7 +16,7 @@ NERI is the native governance token of the Nerite protocol. NERI holders are mem
 
 ### No Separate Entities
 
-Unlike most DeFi protocols, Nerite has **no separate DAO, foundation, operational company, or labs entity** extracting value. There is no Nerite Foundation, no Nerite Labs, no opco taking a cut. It's just NERI. The token itself is the entire governance and value-flow structure. This is core to Nerite's governance-minimized design.
+Unlike most DeFi protocols, Nerite has **no separate DAO, foundation, operational company, or labs entity** extracting value. There is no Nerite Foundation, no Nerite Labs, no operating company taking a cut. It's just NERI. The token itself is the entire governance and value-flow structure. This is core to Nerite's governance-minimized design.
 
 ### What NERI Governs
 
