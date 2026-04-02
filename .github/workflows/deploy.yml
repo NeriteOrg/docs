@@ -5,24 +5,14 @@ on:
     branches:
       - main
   workflow_dispatch:
-    inputs:
-      environment:
-        description: 'Environment to deploy to'
-        required: true
-        default: 'production'
-        type: choice
-        options:
-          - production
-          - staging
-      version:
-        description: 'Version to deploy'
-        required: false
-        type: string
+
+permissions:
+  contents: write
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -37,6 +27,13 @@ jobs:
         run: npx yarn install
 
       - name: Build and Deploy
+        env:
+          GIT_USER: git
+          USE_SSH: false
+          DEPLOYMENT_BRANCH: gh-pages
+          CURRENT_BRANCH: main
         run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
           npx yarn build
-          GIT_USER=cupOJoseph npx yarn deploy
+          GIT_PASS=${{ github.token }} npx yarn deploy
